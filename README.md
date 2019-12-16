@@ -43,6 +43,6 @@ A Python program to crawl RSS feed news and use classification algorithms
 
 * The optimal accuracy is 0.891 obtained by shallow neural network, the worst accuracy result is 0.785 gained by Naïve Bayes model. The accuracy of logistic regression is 0.881, the SVM model gains 0.874 accuracy. The accuracy of Random Forest and XGBoost is 0.823 and 0.857 respectively.
 
-<img width='400' src='https://raw.githubusercontent.com/jetrobert/News-Classification-with-Crawled-Articles/master/result/accuracy.png'>
+<img width='600' src='https://raw.githubusercontent.com/jetrobert/News-Classification-with-Crawled-Articles/master/result/accuracy.png'>
 
-<img width='400' src='https://raw.githubusercontent.com/jetrobert/News-Classification-with-Crawled-Articles/master/result/accuracy-table.png'>
+<img width='800' src='https://raw.githubusercontent.com/jetrobert/News-Classification-with-Crawled-Articles/master/result/accuracy-table.png'>
