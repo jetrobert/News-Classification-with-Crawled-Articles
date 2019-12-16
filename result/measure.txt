@@ -1,0 +1,110 @@
+Results for Logistic Regression
+0.88085106383
+                                 precision    recall  f1-score   support
+
+              Politics_articles       0.92      0.94      0.93        83
+              business_articles       0.89      0.58      0.70        57
+entertainment and arts_articles       0.91      0.77      0.83        56
+    science and health_articles       0.82      0.97      0.89        86
+                sports_articles       1.00      0.99      1.00       101
+                  tech_articles       0.77      0.89      0.82        87
+
+                      micro avg       0.88      0.88      0.88       470
+                      macro avg       0.89      0.85      0.86       470
+                   weighted avg       0.89      0.88      0.88       470
+
+Results for Naive Bayes
+0.785106382979
+                                 precision    recall  f1-score   support
+
+              Politics_articles       0.77      0.96      0.86        83
+              business_articles       0.94      0.28      0.43        57
+entertainment and arts_articles       1.00      0.25      0.40        56
+    science and health_articles       0.87      0.92      0.89        86
+                sports_articles       0.85      0.99      0.91       101
+                  tech_articles       0.63      0.92      0.75        87
+
+                      micro avg       0.79      0.79      0.79       470
+                      macro avg       0.84      0.72      0.71       470
+                   weighted avg       0.83      0.79      0.75       470
+
+Results for Support Vector Machine
+0.874468085106
+                                 precision    recall  f1-score   support
+
+              Politics_articles       0.93      0.92      0.92        83
+              business_articles       0.87      0.60      0.71        57
+entertainment and arts_articles       0.91      0.71      0.80        56
+    science and health_articles       0.83      0.94      0.88        86
+                sports_articles       1.00      0.99      1.00       101
+                  tech_articles       0.75      0.92      0.82        87
+
+                      micro avg       0.87      0.87      0.87       470
+                      macro avg       0.88      0.85      0.85       470
+                   weighted avg       0.88      0.87      0.87       470
+
+Results for Random Forest
+0.823404255319
+                                 precision    recall  f1-score   support
+
+              Politics_articles       0.81      0.95      0.87        83
+              business_articles       0.72      0.46      0.56        57
+entertainment and arts_articles       0.84      0.73      0.78        56
+    science and health_articles       0.80      0.87      0.83        86
+                sports_articles       0.96      0.98      0.97       101
+                  tech_articles       0.74      0.77      0.76        87
+
+                      micro avg       0.82      0.82      0.82       470
+                      macro avg       0.81      0.79      0.80       470
+                   weighted avg       0.82      0.82      0.82       470
+
+Results for XGBoost
+0.857446808511
+                                 precision    recall  f1-score   support
+
+              Politics_articles       0.89      0.94      0.91        83
+              business_articles       0.73      0.61      0.67        57
+entertainment and arts_articles       0.78      0.82      0.80        56
+    science and health_articles       0.91      0.86      0.89        86
+                sports_articles       0.97      0.96      0.97       101
+                  tech_articles       0.78      0.84      0.81        87
+
+                      micro avg       0.86      0.86      0.86       470
+                      macro avg       0.84      0.84      0.84       470
+                   weighted avg       0.86      0.86      0.86       470
+
+Results for Shallow Neural Network
+0.891489361702
+                                 precision    recall  f1-score   support
+
+              Politics_articles       0.90      0.95      0.92        83
+              business_articles       0.84      0.65      0.73        57
+entertainment and arts_articles       0.86      0.77      0.81        56
+    science and health_articles       0.90      0.94      0.92        86
+                sports_articles       1.00      1.00      1.00       101
+                  tech_articles       0.80      0.90      0.85        87
+
+                      micro avg       0.89      0.89      0.89       470
+                      macro avg       0.88      0.87      0.87       470
+                   weighted avg       0.89      0.89      0.89       470
+
+
+
+Results for LSTM
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_9 (Embedding)      (None, 43372, 8)          800       
+_________________________________________________________________
+lstm_9 (LSTM)                (None, 16)                1600      
+_________________________________________________________________
+dense_9 (Dense)              (None, 1)                 17        
+=================================================================
+Total params: 2,417
+Trainable params: 2,417
+Non-trainable params: 0
+_________________________________________________________________
+None
+Train on 1866 samples, validate on 470 samples
+Epoch 1/1
+1866/1866 [==============================] - 1113s 597ms/step - loss: 0.4813 - acc: 0.1206 - val_loss: 0.0144 - val_acc: 0.1213
