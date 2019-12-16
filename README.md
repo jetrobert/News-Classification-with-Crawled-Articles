@@ -1,8 +1,14 @@
 ### News Classification with Crawled Articles
 
+A Python program to crawl RSS feed news and use classification algorithms 
+
 #### Intro
 
 * Text classification is one of the widely used Natural Language Processing (NLP) tasks which allow algorithms to learn and understand human languages. It is a process of assigning labels or categories to the text according to their contents. Text classifiers can be used to organize, structure and categorize various corpora by feeding the text as inputs and analysing the contents.
+
+* This program contains 2 python files. One is crawler and one is a classification program. The crawler looks for 6 categories of news articles. These articles are parsed by the newspaper library. The articles are saved in a data folder corresponding to today's date.
+
+* The classifier.py program will read txt files line by line from any subfiles inside a directory passed in from the command line. If no directory is passed in, they default to data. The classifier will pick up all unique text file names, and these file names will become the category names that will be used for classification. The 6 categories are: Business, Arts and Entertainment, Politics, Science and Health, Sports, and Technology. 
 
 #### Data collection
 
