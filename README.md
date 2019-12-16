@@ -6,13 +6,15 @@ A Python program to crawl RSS feed news and use classification algorithms
 
 * Text classification is one of the widely used Natural Language Processing (NLP) tasks which allow algorithms to learn and understand human languages. It is a process of assigning labels or categories to the text according to their contents. Text classifiers can be used to organize, structure and categorize various corpora by feeding the text as inputs and analysing the contents.
 
-* This program contains 2 python files. One is crawler and one is a classification program. The crawler looks for 6 categories of news articles. These articles are parsed by the newspaper library. The articles are saved in a data folder corresponding to today's date.
+* This program contains 2 python files. One is [crawler](https://github.com/jetrobert/News-Classification-with-Crawled-Articles/blob/master/news_crawler.py) and one is a [classification](https://github.com/jetrobert/News-Classification-with-Crawled-Articles/blob/master/news_classifier.ipynb) program. The crawler looks for 6 categories of news [articles](https://github.com/jetrobert/News-Classification-with-Crawled-Articles/tree/master/data). These articles are parsed by the newspaper library. The articles are saved in a data folder corresponding to newest date.
 
-* The classifier.py program will read txt files line by line from any subfiles inside a directory passed in from the command line. If no directory is passed in, they default to data. The classifier will pick up all unique text file names, and these file names will become the category names that will be used for classification. The 6 categories are: Business, Arts and Entertainment, Politics, Science and Health, Sports, and Technology. 
+* The [news_classifier.py](https://github.com/jetrobert/News-Classification-with-Crawled-Articles/blob/master/news_crawler.py) program will read txt files line by line from any subfiles inside a directory passed in from the command line. If no directory is passed in, they default to data. The [classifier](https://github.com/jetrobert/News-Classification-with-Crawled-Articles/blob/master/news_classifier.py) will pick up all unique text file names, and these file names will become the category names that will be used for classification. The 6 categories are: Business, Arts and Entertainment, Politics, Science and Health, Sports, and Technology. 
 
 #### Data collection
 
 * The first step of news classification is to collect data. For this project, we have crawled total 2336 news articles with 6 categories (Business, Arts and Entertainment, Politics, Science and Health, Sports, Technology) from various news websites such as CNN, The Economist and New York Post. Among the whole news data, 21.% of them are sports articles, 17.6% are Politics news, 11.8% are entertainment and arts articles, 18.4% are science and health articles, 18.6% are technology articles and 12.0% are business articles.
+
+![](https://raw.githubusercontent.com/jetrobert/News-Classification-with-Crawled-Articles/master/figure/Distribution%20of%20News%20Categories.png)
 
 #### Data Pre-processing
 
@@ -40,3 +42,7 @@ A Python program to crawl RSS feed news and use classification algorithms
 #### Results
 
 * The optimal accuracy is 0.891 obtained by shallow neural network, the worst accuracy result is 0.785 gained by Naïve Bayes model. The accuracy of logistic regression is 0.881, the SVM model gains 0.874 accuracy. The accuracy of Random Forest and XGBoost is 0.823 and 0.857 respectively.
+
+![](https://raw.githubusercontent.com/jetrobert/News-Classification-with-Crawled-Articles/master/result/accuracy.png =400x)
+
+![](https://raw.githubusercontent.com/jetrobert/News-Classification-with-Crawled-Articles/master/result/accuracy-table.png =400x)
